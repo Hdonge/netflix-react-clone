@@ -4,6 +4,10 @@
 - Header
 - Login form
 - Sign form
+- Form validation
+- useRef hook
+- dummy logic for sign in and user creation
+- created redux store with userSlice
 
 # Features
 - Login/Signup

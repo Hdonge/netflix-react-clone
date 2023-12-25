@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from "react-redux";
+
+import { addUser } from '../store/userSlice';
+
 
 const Header = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        //check or call auth seruce or auth state change from here.
+        const user = {
+            id: '123',
+            email: 'user@example.com',
+        }
+        dispatch(addUser(user));
+    },[]);
     return (
         <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10'>
             <img
